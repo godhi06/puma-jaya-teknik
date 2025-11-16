@@ -72,7 +72,14 @@ export default function HomePage() {
             <button onClick={() => { handleScroll('jenisac'); setMenuOpen(false)}} className="hover:text-amber-400 transition">Jenis AC</button>
             <button onClick={() => { handleScroll('jenisservice'); setMenuOpen(false)}} className="hover:text-amber-400 transition">Jenis Layanan</button>
             <button onClick={() => { handleScroll('tentang'); setMenuOpen(false)}} className="hover:text-amber-400 transition">Tentang Kami</button>
-            <a href="#!" onClick={() => window.open('https://wa.me/6281295843474', '_blank')} className="hover:text-amber-400 transition" onClick={()=>setMenuOpen(false)}>
+            <a 
+              href="#!" 
+              className="hover:text-amber-400 transition" 
+              onClick={() => {
+                window.open('https://wa.me/6285123337635', '_blank');
+                setMenuOpen(false);
+              }}
+            >
               Hubungi
             </a>
           </div>
@@ -117,7 +124,7 @@ export default function HomePage() {
           </div>
           {/* CTA kecil di bawah */}
           <div className="mt-12">
-            <a href="https://wa.me/6281295843474" target="_blank" rel="noopener noreferrer" className="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 text-xl rounded-lg shadow-lg transition transform hover:scale-105">
+            <a href="https://wa.me/6285123337635" target="_blank" rel="noopener noreferrer" className="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 text-xl rounded-lg shadow-lg transition transform hover:scale-105">
               Hubungi Sekarang
             </a>
           </div>
