@@ -183,7 +183,7 @@ export default function HomePage() {
 
       {/* FLOATING WHATSAPP */}
       <a
-        href="https://wa.me/6281295843474?text=Halo%20Puma%20Jaya%20Teknik,%20saya%20ingin%20bertanya%20tentang%20layanan%20AC."
+        href="https://wa.me/6285123337635?text=Halo%20Puma%20Jaya%20Teknik,%20saya%20ingin%20bertanya%20tentang%20layanan%20AC."
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-5 rounded-full shadow-lg flex items-center justify-center transition-transform hover:scale-110"
