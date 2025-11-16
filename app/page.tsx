@@ -61,9 +61,12 @@ export default function HomePage() {
               alt="PJT Logo" 
               className="h-16 w-auto md:h-20 drop-shadow-lg"
             />
-            <span className="hidden md:block font-bold text-3xl">
-              Puma Jaya Teknik
-            </span>
+        
+        <span className="block font-bold text-xl sm:text-2xl md:text-3xl text-white whitespace-nowrap">
+          Puma Jaya Teknik
+        </span>
+
+
           </div>
 
           {/* MENU DESKTOP */}
