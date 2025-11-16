@@ -49,10 +49,24 @@ export default function HomePage() {
 
   return (
     <div className="relative w-full overflow-hidden">
+
       {/* NAVBAR */}
       <nav className="fixed top-0 left-0 w-full z-[9999] bg-black/40 backdrop-blur-md text-white">
         <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-          <h1 className="font-bold text-3xl md:text-4xl text-white">Puma Jaya Teknik</h1>
+
+          {/* LOGO + TEXT */}
+          <div className="flex items-center gap-3">
+            <img 
+              src="/images/logo-pjt.png" 
+              alt="PJT Logo" 
+              className="h-16 w-auto md:h-20 drop-shadow-lg"
+            />
+            <span className="hidden md:block font-bold text-3xl">
+              Puma Jaya Teknik
+            </span>
+          </div>
+
+          {/* MENU DESKTOP */}
           <div className="hidden md:flex gap-8 text-lg md:text-xl">
             <button onClick={() => handleScroll('layanan')} className="hover:text-amber-400 transition">Layanan</button>
             <button onClick={() => handleScroll('jenisac')} className="hover:text-amber-400 transition">Jenis AC</button>
@@ -62,10 +76,14 @@ export default function HomePage() {
               Hubungi
             </a>
           </div>
+
+          {/* MOBILE BUTTON */}
           <button className="md:hidden text-white text-3xl" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? <FiX /> : <FiMenu />}
           </button>
         </div>
+
+        {/* MOBILE DROPDOWN MENU */}
         {menuOpen && (
           <div className="md:hidden bg-black/80 backdrop-blur-md text-white flex flex-col items-center gap-6 py-6 text-lg">
             <button onClick={() => { handleScroll('layanan'); setMenuOpen(false)}} className="hover:text-amber-400 transition">Layanan</button>
@@ -122,7 +140,6 @@ export default function HomePage() {
               </div>
             ))}
           </div>
-          {/* CTA kecil di bawah */}
           <div className="mt-12">
             <a href="https://wa.me/6285123337635" target="_blank" rel="noopener noreferrer" className="inline-block bg-green-500 hover:bg-green-600 text-white px-6 py-3 text-xl rounded-lg shadow-lg transition transform hover:scale-105">
               Hubungi Sekarang
@@ -153,7 +170,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* JENIS LAYANAN AC */}
+      {/* JENIS LAYANAN */}
       <section id="jenisservice" className="py-20 md:py-28 bg-white">
         <div className="max-w-6xl mx-auto px-6 text-center">
           <h2 className="text-6xl md:text-7xl font-bold mb-16 text-blue-900">Jenis Layanan AC</h2>
@@ -191,6 +208,7 @@ export default function HomePage() {
       >
         <FaWhatsapp size={32} />
       </a>
+
     </div>
   )
 }
